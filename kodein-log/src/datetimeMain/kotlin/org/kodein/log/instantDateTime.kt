@@ -8,4 +8,4 @@ public actual typealias Instant = kotlinx.datetime.Instant
 
 public actual fun now(): Instant = kotlinx.datetime.Clock.System.now()
 
-public actual fun Instant.toLocalString(): String = toLocalDateTime(TimeZone.currentSystemDefault()).toString()
+public actual fun Instant.toLocalString(): String = toLocalDateTime(TimeZone.UTC).toString()
